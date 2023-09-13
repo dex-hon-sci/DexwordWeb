@@ -11,7 +11,6 @@
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <script src="https://kit.fontawesome.com/1845f60f85.js" crossorigin="anonymous"></script>
 
-	<!-- This site is optimized with the Yoast SEO plugin v19.7.2 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Home - DexWorld.net</title>
 	<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}">
     <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle.css')}}">
@@ -27,6 +26,28 @@
             /*height: 300px;  width: 1460px; */
             padding: 5px;
                     }
+                    
+        .Content-small1 {
+            background-image: url({{url_for('static',filename='/images/gal_showcase2.png')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:430px
+            }
+            
+        .Content-small2 {
+            background-image: url({{url_for('static',filename='/images/2f6d8f2313631888841e6d19d7b55c4b.jpg')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:430px}
+            
+        .Content-small3 {
+            background-image: url({{url_for('static',filename='/images/DSCN4347-2.jpg')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:430px}                    
 
     </style>
 	<link rel="canonical" href="https://dexworld.net/" />
@@ -42,6 +63,8 @@
 	
 <!--img src="{{url_for('static', filename='images/PXL_20230727_132735076.jpg')}}", class="image" alt="Banner background" style="width:100%"/-->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none"  id="mySidebar">
+  <img src="{{url_for('static', filename='images/61987771(copy).png')}}" class="image" style="width:90% float:top"> 
+
   <a href="javascript:void(0)" class="closebtn" onclick="w3_close()">&times;</a>
   <a href="#" class="w3-bar-item w3-button w3-left">Data Science</a>
   <a href="#" class="w3-bar-item w3-button w3-left">Astronomy</a>
@@ -55,7 +78,7 @@
 
 <div class="container">
 
-<!-- Header Banner Bar class="w3-container w3-black w3-center w3-margin-top">-->
+<!--------------------------- Header Banner Bar------------------------------->
 <header id="myHeader2" class="header">
     <div></div><div></div>
     <div id="social-icons"> 
@@ -66,10 +89,10 @@
         <a href="https://instagram.com" class="fa-brands fa-instagram" style="text-decoration: none"></a>
         <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-researchgate" style="text-decoration: none"></a>
         <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-goodreads" style="text-decoration: none"></a>
-                    <!--a href="https://scholar.google.com/citations?user=uSR5ircAAAAJ&hl=en&oi=sra" class="googlescholar_icon" style="text-decoration: none"></a-->
+        <a href="https://scholar.google.com/citations?user=uSR5ircAAAAJ&hl=en&oi=sra" class="fa-brands fa-google" style="text-decoration: none"></a>
     </div>    
     <div></div> <div></div> <div></div>
-    <div id="Banner-title"> 
+    <div class="Banner-title"> 
         <h1> Dexter Hon's Home Page </h1>
         <h4> A blog dedicated to Science, Art, and Travel. </h4>
     </div>
@@ -92,20 +115,69 @@
             </div>
     </div>
   <a href="#Books" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Books</a>
-  <a href="#aboutme"class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Me</a>
+  <a href="#Aboutme"class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Me</a>
 </nav> 
 
+<!----------------- Introduction to the website------------------------------->
 
 <div class="Content-large">
-Science
+Thesis
+
+
 </div>
-<div class="Content-small1">Content-small</div>
-<div class="Content-small2">Content-small</div>
-<div class="Aboutme">Aboutme</div>
-<div class="Content-small3">Content-small</div>
 
+<!----------------- Topic block No. 1----------------------------------------->
+<div class="Content-small1">Content-small-left
+<div class="banner-cell1">tot</div>
+</div>
 
+<!----------------- Topic block No. 2----------------------------------------->
 
+<div class="Content-small2">Middle Content
+<div class="banner-cell2">tot</div>
+</div>
+
+<!----------------- Topic block No. 3----------------------------------------->
+<div class="Content-small3">Content-small-right
+<div class="banner-cell3">tot</div>
+</div>
+
+<!----------------- Features Slides------------------------------------------->
+
+<div class="features" style="width:100%; height:405px"> Features 
+  <div class="w3-center vertical-align:bottom" style="width:100%">
+    <div class="w3-left w3-xxxlarge w3-padding-large w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-xxxlarge w3-padding-large w3-text-white" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<!----------------- About Me Section------------------------------->
+
+<div class="Aboutme" id="Aboutme" >
+  <div class="Aboutme_photo">
+  <img src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
+   style="width:100%" style="grid-column-start: 2; grid-column-end: 3;"> </div>
+   
+   <div class="Aboutme_Desc">
+   <span style="color:white">
+        <h1 calss="w3-wide"><p>About Me</p></h1>
+        <p> I am passionate about using data to solve complex problems.
+    My academic pursuit in Astrophysics provided me with valuable skill sets that are immediately useful in data science.
+    I am particularly proficient in Statistical Analysis, image processing, and scientific writing.
+    Most importantly, I can learn new skills quickly and work in a team setting in any collaborative effort.
+    Furthermore, being an expatriate my whole life (I am born Malaysian and raised in Hong Kong) has fostered important interpersonal skills for me.
+    Having worked in three countries (China, Finland, and Australia) since 2012, I have learnt the value of communication and intercultural collaboration.
+    I am eager to apply my scientific skills to tackle real-life problems and deliver data-driven solutions to empower decision-making in the tech industry. 
+        <!--div><object data="static/Aboutme.txt" style="color:white"></object></div-->
+        </p>
+        <a style="float:right">See my full CV</a>
+    </span></div>
+</div>
+
+<!----------------- Footer --------------------------------------------------->
 <div class="footer" style="font-size: 16px;">
     <p>Contact Me</p>
     <ul class="copyright">
@@ -114,11 +186,11 @@ Science
 </div>
 
 </div>
-<script>
+
 <!--JavaScript functions-->
+<script>
 
 <!--Open close sidebar-->
-
 function w3_open() {
   var x = document.getElementById("mySidebar");
   x.style.width = "18%";
