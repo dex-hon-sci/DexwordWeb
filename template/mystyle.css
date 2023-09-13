@@ -1,0 +1,20 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+p {
+  font-family: verdana;
+  color: white;
+  font-size: 20px;
+}
+
+#Style for the top navigation bar
+.topnav {
+      background-color: #2b3844;
+      text-align: right;
+}

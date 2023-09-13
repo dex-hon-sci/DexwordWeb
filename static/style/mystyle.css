@@ -1,0 +1,193 @@
+body {
+  background-color: #202f37;
+}
+
+p {
+  /*font-family: verdana;*/
+  color: white;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    box-sizing: border-box;
+    border: 1px solid red;
+
+    
+    font-family: Times, "Times New Roman", Georgia, serif;  
+
+    display: grid;
+    
+    grid-template-columns: 1fr 230px 2fr 230px 1fr;
+    grid-template-rows: 300px 55px 1fr 1fr 1fr 100px;
+    
+    gap: 5px;
+    padding: 5px;
+   /* box-sizing: border-box;*/
+    overflow:scroll;
+    /*flex-direction: row
+    justify-content: space;
+    align-items: baseline;
+    flex-wrap: nowrap;*/
+    
+}
+
+.container div {
+    padding:10px;
+    border: 1px solid #000000;
+}
+
+.header2 {
+      background-color:#000000; 
+      grid-column-start: 1;
+      grid-column-end: 6;}
+      
+.header {
+       color: white; 
+       display: grid;
+    
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+    
+       gap: 0px;
+       padding: 5px;
+              
+       background-color:#000000; 
+       grid-column-start: 1;
+       grid-column-end: 6;}
+
+
+.footer {
+     background-color: black; 
+     grid-column-start: 1;
+     grid-column-end: 6;
+     
+     box-sizing: border-box;
+     border: 1px solid #000000;
+     
+     text-align: center;
+     }
+
+#mySidebar {
+      background-color: #47494b;
+      color: white;
+      font-size: 18px;
+      font-family: Times, "Times New Roman", Georgia, serif;  
+      display: block;
+      transition: 0.3s;
+      overflow: hidden;
+      position: absolute;
+      z-index: 10;
+      width: 1500vw;
+
+}
+
+#Banner-title {
+      position: absolute;
+      top: 180px;
+      width: 500px;
+      font-family: Times, "Times New Roman", Georgia, serif;
+
+}
+
+#social-icons {
+      font-size: 40px;
+      color: #202f37;
+      text-align: right;
+      vertical-align: top;
+}
+
+
+#myHeader3 {     
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 300px;  width: 1460px; 
+    background-color: blue;
+    padding: 5px;
+}
+
+.Content-large {
+       grid-column-start: 2;
+       grid-column-end: 5;
+       
+       grid-row-start: 3;
+       grid-row-end:span 1;
+}
+
+.Content-small1 {
+       grid-column-start: 1;
+       grid-column-end: 2;
+       
+       grid-row-start: 3;
+       grid-row-end:span 3;
+}
+
+.Content-small2 {
+       grid-column-start: 2;
+       grid-column-end: 5;
+       
+       grid-row-start: 4;
+       grid-row-end:span 1;
+}
+
+.Content-small3 {
+       grid-column-start: 5;
+       grid-column-end: 6;
+       grid-row-start: 3;
+       grid-row-end:span 3;
+}
+
+.Aboutme {
+       grid-column-start: 2;
+       grid-column-end: 5;
+       grid-row-start: 5;
+       grid-row-end:span 1 ;
+}
+
+       
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+@media screen and (max-height: 450px) {
+  #mySidebar {padding-top: 15px;}
+  #mySidebar a {font-size: 18px;}
+}
+
+/* Style for the top navigation bar */
+#topnav2 {
+      grid-column-start: 1;
+      grid-column-end: 8;
+          
+      background-color: #2b3844;
+      color: white;
+      font-size: 18px;
+      font-family: Times, "Times New Roman", Georgia, serif;
+      text-align: right;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  text-align: right;
+  vertical-align: middle;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.googlescholar_icon {
+    background: url('/static/images/favicon.png');
+    display: block;
+    text-align: right;
+}
+
