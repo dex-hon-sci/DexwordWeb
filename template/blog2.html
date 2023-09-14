@@ -11,14 +11,15 @@
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <script src="https://kit.fontawesome.com/1845f60f85.js" crossorigin="anonymous"></script>
 
-	<title>Home - DexWorld.net</title>
+	<title>Home - DexWorld.net - Blog</title>
 	<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}">
-    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_home.css')}}">
+	<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_blog.css')}}">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
 
     <style>
-        #myHeader2 {
+        #myHeader {
             background-image: url({{url_for('static',filename='/images/PXL_20230727_132733855.MP3.jpg')}});
             background-size: cover;
             background-position: left;
@@ -26,37 +27,8 @@
             /*height: 300px;  width: 1460px; */
             padding: 5px;
                     }
-                    
-        .Content-large {
-            background-image: url({{url_for('static',filename='/images/prateek-katyal-_YzGQvASeMk-unsplash.jpg')}});
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;        
-        }            
-                    
-        .Content-small1 {
-            background-image: url({{url_for('static',filename='/images/spiral_gal.png')}});
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 580px
-            }
-            
-        .Content-small2 {
-            background-image: url({{url_for('static',filename='/images/Lore3-Recovered-Recovered-Recovered4_AI_Expanded.png')}});
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height:580px}
-            
-        .Content-small3 {
-            background-image: url({{url_for('static',filename='/images/code_example.png')}});
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height:580px}                    
-
     </style>
+    
 	<link rel="canonical" href="https://dexworld.net/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
@@ -65,8 +37,8 @@
 	<meta property="og:url" content="https://dexworld.net/" />
 	<meta property="og:site_name" content="dexworld.net" />
 	<meta property="article:modified_time" content="2022-01-07T20:10:45+00:00" />
-</head>
 	<!--script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://ryanholiday.net/","url":"https://ryanholiday.net/","name":"Home - RyanHoliday.net","isPartOf":{"@id":"https://ryanholiday.net/#website"},"datePublished":"2018-04-30T08:47:03+00:00","dateModified":"2022-01-07T20:10:45+00:00","breadcrumb":{"@id":"https://ryanholiday.net/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ryanholiday.net/"]}]},{"@type":"BreadcrumbList","@id":"https://ryanholiday.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://ryanholiday.net/#website","url":"https://ryanholiday.net/","name":"RyanHoliday.net","description":"Meditations on strategy and life","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://ryanholiday.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script-->
+</head>
 
 <!-- Side Navigation -->	
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none"  id="mySidebar">
@@ -84,7 +56,7 @@
 
 <div class="container">
 <!--------------------------- Header Banner Bar------------------------------->
-<header id="myHeader2" class="header">
+<header id="myHeader" class="header">
     <div></div><div></div>
     <div id="social-icons"> 
     <!--div class="w3-display-bottomleft w3-container w3-xxxlarge w3-text-white w3-padding-32 w3-hide-small"--class=" w3-container w3-text-white w3-hide-small w3-display-bottom-right"-->
@@ -99,16 +71,16 @@
     <div></div> <div></div> <div></div>
     <div class="Banner-title"> 
         <h1> Dexter Hon's Home Page </h1>
-        <h4> | Science | Art | Travel | </h4>
+        <h4>| Science | Art | Travel |</h4>
     </div>
     <div></div>
 </header>
 
-<nav class="topnav" id="topnav2">
+<nav class="topnav" id="topnav">
  <span class="fa fa-bars w3-xxlarge w3-left w3-theme w3-text-white" style="cursor:pointer" onclick="w3_open()"></span>
   <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-left"><i class="fa fa-search"></i></a>
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="color:#f6a661">Home</a>
-  <a href="#Blog" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog/Articles</a>
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+  <a href="#Blog" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="color:#f6a661">Blog/Articles</a>
   <button class="w3-padding-large w3-button" title="Projects">Projects <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-hover w3-hide-small">
          <a href="#Publication" class="w3-bar-item w3-button">Publications</a>
@@ -123,82 +95,12 @@
   <a href="#Aboutme"class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Me</a>
 </nav> 
 
-<!----------------- Introduction to the website------------------------------->
+<div class="margin-left">margin-left</div>
 
-<div class="Content-large">
-Thesis
+<div class="block-left">block-left</div>
 
-</div>
-<!----------------- Topic block No. 1----------------------------------------->
-
-<div class="Content-small-grid">
-    <div class="Content-small1">
-    <div class="banner-cell1">
-    <h1>Science</h1>
-    <br>
-    <h5> Data Science </h5>
-    <h5> Astronomy </h5>
-    <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
-    </div>
-    </div>
-
-<!----------------- Topic block No. 2----------------------------------------->
-
-    <div class="Content-small2">
-    <div class="banner-cell2">
-    <h1>Art</h1>
-    <br>
-    <h5> Illustration Profolio </h5>
-    <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
-    </div>
-    </div>
-
-<!----------------- Topic block No. 3----------------------------------------->
-    <div class="Content-small3">
-    <div class="banner-cell3">
-    <h1>Projects</h1>
-    <br>
-    <h5> MNIST practise </h5>
-    <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
-
-    </div>
-    </div>
-</div>
-
-<!----------------- Features Slides------------------------------------------->
-
-<div class="features" style="width:100%; height:405px"> Features 
-  <div class="w3-center vertical-align:bottom" style="width:100%">
-    <div class="w3-left w3-xxxlarge w3-padding-large w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-xxxlarge w3-padding-large w3-text-white" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
-  </div>
-</div>
-
-<!----------------- About Me Section------------------------------->
-
-<div class="Aboutme" id="Aboutme" >
-  <div class="Aboutme_photo">
-  <img src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
-   style="width:100%" style="grid-column-start: 2; grid-column-end: 3;"> </div>
-   
-   <div class="Aboutme_Desc">
-   <span style="color:white">
-        <h1 calss="w3-wide"><p>About Me</p></h1>
-        <p> I am passionate about using data to solve complex problems.
-    My academic pursuit in Astrophysics provided me with valuable skill sets that are immediately useful in data science.
-    I am particularly proficient in Statistical Analysis, image processing, and scientific writing.
-    Most importantly, I can learn new skills quickly and work in a team setting in any collaborative effort.
-    Furthermore, being an expatriate my whole life (I am born Malaysian and raised in Hong Kong) has fostered important interpersonal skills for me.
-    Having worked in three countries (China, Finland, and Australia) since 2012, I have learnt the value of communication and intercultural collaboration.
-    I am eager to apply my scientific skills to tackle real-life problems and deliver data-driven solutions to empower decision-making in the tech industry. 
-        <!--div><object data="static/Aboutme.txt" style="color:white"></object></div-->
-        </p>
-        <a style="float:right">See my full CV</a>
-    </span></div>
-</div>
+<div class="block-right">block-right</div>
+<div class="margin-right">margin-right</div>
 
 <!----------------- Footer --------------------------------------------------->
 <div class="footer" style="font-size: 16px;">
