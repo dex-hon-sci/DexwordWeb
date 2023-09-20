@@ -100,45 +100,43 @@
 	<meta property="og:site_name" content="dexworld.net" />
 	<meta property="article:modified_time" content="2022-01-07T20:10:45+00:00" />
 </head>
-	<!--script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://ryanholiday.net/","url":"https://ryanholiday.net/","name":"Home - RyanHoliday.net","isPartOf":{"@id":"https://ryanholiday.net/#website"},"datePublished":"2018-04-30T08:47:03+00:00","dateModified":"2022-01-07T20:10:45+00:00","breadcrumb":{"@id":"https://ryanholiday.net/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ryanholiday.net/"]}]},{"@type":"BreadcrumbList","@id":"https://ryanholiday.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://ryanholiday.net/#website","url":"https://ryanholiday.net/","name":"RyanHoliday.net","description":"Meditations on strategy and life","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://ryanholiday.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script-->
 
 <!-- Side Navigation -->	
 <nav class="w3-sidebar w3-bar-block w3-animate-left sidenav" style="display:none"  id="mySidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="w3_close()" style="font-size:16px">&times;</a>
-     <button class="dropdown-btn">DATA SCIENCE<i class="fa fa-caret-down"></i></button></a>
+     <hr>
+     <button class="dropdown-btn">Data Science<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container" style="  background-color: #5c656e;">
               <a href="#" class="w3-bar-item w3-button w3-left">Sub-Topic 1</a>
-              <a href="#" class="w3-bar-item w3-button w3-left">Sub-topic 2</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
         </div>
         
-     <button class="dropdown-btn">Astronomy<i class="fa fa-caret-down"></i></button></a>
+     <button class="dropdown-btn">Astronomy<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
               <a href="#" class="w3-bar-item w3-button w3-left">Galaxy Spheroids</a>
               <a href="#" class="w3-bar-item w3-button w3-left">Cross-correlation</a>
         </div>
 
-     <button class="dropdown-btn">Computer Science<i class="fa fa-caret-down"></i></button></a>
+     <button class="dropdown-btn">Computer Science<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
               <a href="#" class="w3-bar-item w3-button w3-left">Graph</a>
-              <a href="#" class="w3-bar-item w3-button w3-left">Sub-topic 2</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
         </div>
-
-     <button class="dropdown-btn">Art<i class="fa fa-caret-down"></i></button></a>
+     <hr>
+     <button class="dropdown-btn">Art<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
               <a href="#" class="w3-bar-item w3-button w3-left">Cosmic Fever Dream</a>
-              <a href="#" class="w3-bar-item w3-button w3-left">Sub-topic 2</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
         </div>
         
-     <button class="dropdown-btn">Travel<i class="fa fa-caret-down"></i></button></a>
+     <button class="dropdown-btn">Travel<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
               <a href="#" class="w3-bar-item w3-button w3-left">Notes from around the world</a>
-              <a href="#" class="w3-bar-item w3-button w3-left">Sub-topic 2</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
         </div>        
-           
-  
-  <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
-  <img src="{{url_for('static', filename='images/61987771(copy).png')}}" class="image" style="width:50%; float:top"> 
-
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+     <hr>
+     <img src="{{url_for('static', filename='images/61987771(copy).png')}}" class="image" style="width:50%; float:top"> 
 </nav>
 
 <body>
@@ -166,31 +164,29 @@
 </header>
 
 <nav class="topnav navbar" id="topnav2">
- <span class="fa fa-bars w3-xxlarge w3-left w3-theme w3-text-white" style="cursor:pointer; z-index:10" onclick="w3_open()"></span>
-  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-left"><i class="fa fa-search"></i></a>
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="color:#f6a661">Home</a>
-  <a href="#Blog" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog/Articles</a>
-  <div class="w3-dropdown-hover w3-hide-small">
-  <button class="w3-padding-large w3-button" title="Projects" >Projects <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-hover w3-hide-small">
+ <span class="fa fa-bars w3-xxlarge w3-left w3-theme w3-text-white" style="cursor:pointer" onclick="w3_open()"></span>
+  <a href="javascript:void(0)" style="text-align:left"><i class="fa fa-search w3-bar-item w3-padding-large"></i></a>
+  <a href="#home" class="dropdown w3-bar-item w3-button w3-padding-large" style="color:#f6a661">Home</a>
+  <a href="#Blog" class="dropdown w3-bar-item w3-button w3-padding-large">Blog/Articles</a>
+  <div class="dropdown w3-bar-item w3-button">
+  <button class="w3-button w3-padding-large" title="Projects" >Projects <a class="fa fa-caret-down"></a></button>     
+    <div class="dropdown-content">
          <a href="#Publication" class="w3-bar-item w3-button" >Publications</a>
          <a href="#Sci" class="w3-bar-item w3-button" style="display:none">Science</a>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <div class="dropdown-content ">
                   <a href="#DataSci" class="w3-bar-item w3-button">Data Science</a>
-                  <a href="#Astro" class="w3-bar-item w3-button">Astronomy</a>
-                  <a href="#CS" class="w3-bar-item w3-button">Computer Science</a>
             </div>
     </div>
   </div>
-  <div class="w3-dropdown-hover w3-hide-small">
+  <div class="dropdown w3-bar-item w3-button">
   <!--a href="#Books" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Books</a-->
-  <button class="w3-padding-large w3-button" title="Projects">Books <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-hover w3-hide-small">
+  <button class="w3-button w3-padding-large" id="Books">Books <a class="fa fa-caret-down"></a></button>     
+    <div class="dropdown-content w3-bar-block w3-card-4 w3-hide-small" id="Books-Content">
          <a href="#BookRecommend" class="w3-bar-item w3-button">Recommendation</a>
          <a href="#BookReviews" class="w3-bar-item w3-button">Reviews</a>
     </div>
   </div>
-  <a href="#Aboutme"class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+  <a href="#Aboutme" class="dropdown w3-bar-item w3-button w3-padding-large">About</a>
 </nav> 
 
 <!----------------- Introduction to the website------------------------------->
@@ -212,9 +208,9 @@
     <div class="banner-cell1">
     <a style="font-size: 40px">Science</a>
     <p style="font-size: 18px"> 
-            <a href="#DataScience">|Data Science|</a>
-            <a>|Astronomy|</a>
-            <a>|Computer Science|</a>
+            <a href="#DataScience">| Data Science </a>
+            <a>| Astronomy </a>
+            <a>| Computer Science |</a>
 
     </p>
     <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
@@ -257,7 +253,7 @@
     </div>
     <div class="slides">
       <div class="slide" id="slide-1">
-        <p>This is the first slide. Scroll to the right to go to the next slide.</p>
+        <p>Galaxy Spheroids: My Astrophysics research on the properties of quiescent spheroids hidden in galaxies in the local Universe.</p>
       </div>
       <div class="slide" id="slide-2">
         <p>This is the second slide. Alternatively, change slides using the buttons at the top.</p>
@@ -276,13 +272,11 @@
 <!----------------- About Me Section------------------------------->
 
 <div class="Aboutme" id="Aboutme" >
-  <div class="Aboutme_photo">
-  <img src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
+  <div class="Aboutme_photo"> <img src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
    style="width:100%" style="grid-column-start: 2; grid-column-end: 3;"> </div>
-   
    <div class="Aboutme_Desc">
    <span style="color:white">
-        <h1 calss="w3-wide"><p>About Me</p></h1>
+        <p style="font-size: 30px; color:#f6a661">About Me</p>
         <p> I am passionate about using data to solve complex problems.
     My academic pursuit in Astrophysics provided me with valuable skill sets that are immediately useful in data science.
     I am particularly proficient in Statistical Analysis, image processing, and scientific writing.
@@ -290,10 +284,21 @@
     Furthermore, being an expatriate my whole life (I am born Malaysian and raised in Hong Kong) has fostered important interpersonal skills for me.
     Having worked in three countries (China, Finland, and Australia) since 2012, I have learnt the value of communication and intercultural collaboration.
     I am eager to apply my scientific skills to tackle real-life problems and deliver data-driven solutions to empower decision-making in the tech industry. 
-        <!--div><object data="static/Aboutme.txt" style="color:white"></object></div-->
         </p>
-        <a style="float:right">See my full CV</a>
     </span></div>
+    <div class="Aboutme_buttons"> 
+        <button class="w3-button w3-padding-large w3-center" id="AM_button1">
+          <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Hon%2C%20Dexter%20S.%20-H.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" style="text-decoration: none"> 
+          Publications <a class="fa fa-caret-right"> </a> 
+          </a>
+        </button>
+        <div class="w3-padding-large w3-center" id="AM_button2"> 
+            <a> What </a><a class="fa fa-caret-right" style="font-size:16px"></a> 
+        </div>
+        <div class="w3-padding-large w3-center" id="AM_button3">  
+            <a>Detailed CV</a> <a class="fa fa-caret-right" style="font-size:16px"></a> 
+        </div>
+    </div>
 </div>
 
 <!----------------- Footer --------------------------------------------------->
