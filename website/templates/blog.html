@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+</style>
+</head>
+<body>
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none"  id="mySidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="w3_close()">&times;</a>
+  <a href="#" class="w3-bar-item w3-button w3-left">Data Science</a>
+  <a href="#" class="w3-bar-item w3-button w3-left">Astronomy</a>
+  <a href="#" class="w3-bar-item w3-button w3-left">Computer Scinece</a>
+  <a href="#" class="w3-bar-item w3-button w3-left">Art</a>
+  <a href="#" class="w3-bar-item w3-button w3-left">Travel</a>
+  <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+</nav>
+
+    <div class="social-icons"> 
+    <!--div class="w3-display-bottomleft w3-container w3-xxxlarge w3-text-white w3-padding-32 w3-hide-small"--class=" w3-container w3-text-white w3-hide-small w3-display-bottom-right"-->
+        <a href="https://github.com/dex-hon-sci" class="fa-brands fa-github" style="text-decoration: none"></a>
+        <a href="https://www.linkedin.com/in/dexter-suei-hei-h-81a358b1/" class="fa-brands fa-linkedin" style="text-decoration: none"></a>
+        <a href="https://orcid.org/0000-0003-3183-2371" class="fa-brands fa-orcid" style="text-decoration: none"></a>
+        <a href="https://instagram.com" class="fa-brands fa-instagram" style="text-decoration: none"></a>
+        <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-researchgate" style="text-decoration: none"></a>
+        <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-goodreads" style="text-decoration: none"></a>
+                    <!--a href="https://scholar.google.com/citations?user=uSR5ircAAAAJ&hl=en&oi=sra" class="googlescholar_icon" style="text-decoration: none"></a-->
+    </div>
+
+<!-- ############################ Navigation Bar-->
+<div class="topnav" id="topnav1">
+ <span class="fa fa-bars w3-xxlarge w3-left w3-button w3-theme w3-text-white" style="cursor:pointer" onclick="w3_open()"></span>
+  <div class="topnav-right" id="topnav2">  
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+  <a href="#Blog" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog/Articles</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-padding-large w3-button" title="Projects" href="#Projects">Projects <i class="fa fa-caret-down w3-dropdown-hover"></i></button>     
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#Publication" class="w3-bar-item w3-button">Publications</a>
+        <a href="#Sci" class="w3-bar-item w3-button">Science</a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+
+                  <a href="#DataSci" class="w3-bar-item w3-button">Data Science</a>
+                  <a href="#Astro" class="w3-bar-item w3-button">Astronomy</a>
+                  <a href="#CS" class="w3-bar-item w3-button">Computer Science</a>
+                </div>
+    </div>
+  </div>
+  <a href="#Books" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Books</a>
+  <a href="#aboutme"class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Me</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+  </div>
+</div> 
+
+<div style="max-width:2000px;margin-top:46px" id="Slides">
+<div class="w3-content w3-display-container w3-center">
+  <img class="mySlides" src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
+   style="width:100%">
+           <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+             <h3>Science</h3>
+             <p><b> The Science and Technology related topics.</b></p>   
+           </div>
+  <img class="mySlides" src="{{url_for('static', filename='images/2f6d8f2313631888841e6d19d7b55c4b.jpg')}}" class="image"
+   style="width:100%">  
+  <img class="mySlides" src="{{url_for('static', filename='images/2f6d8f2313631888841e6d19d7b55c4b.jpg')}}" class="image"
+   style="width:100%">  
+  <div class="w3-center w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-xxxlarge w3-padding-large w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-xxxlarge w3-padding-large w3-text-white" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+<!-- ############################ -->
+
+
+
+<div class="w3-content w3-container w3-padding-64" style="max-width:2000px;margin-top:46px;color:white" id="AboutMe">
+  <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-left">
+        <img src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
+         style="width:35%"/>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <p><h1 calss="w3-wide">About Me</h1></p>
+        <p><h4> I am passionate about using data to solve complex problems.
+    My academic pursuit in Astrophysics provided me with valuable skill sets that are immediately useful in data science.
+    I am particularly proficient in Statistical Analysis, image processing, and scientific writing.
+    Most importantly, I can learn new skills quickly and work in a team setting in any collaborative effort.
+    Furthermore, being an expatriate my whole life (I am born Malaysian and raised in Hong Kong) has fostered important interpersonal skills for me.
+    Having worked in three countries (China, Finland, and Australia) since 2012, I have learnt the value of communication and intercultural collaboration.
+    I am eager to apply my scientific skills to tackle real-life problems and deliver data-driven solutions to empower decision-making in the tech industry. 
+        <!--div><object data="static/Aboutme.txt" style="color:white"></object></div-->
+        </h4></p>
+        <a>See my full CV</a>
+    </div>
+</div>
+
+   
+</body>
+</html> 

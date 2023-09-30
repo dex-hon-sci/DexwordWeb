@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js" >
+<!-- start -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1," />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="alternate" type="application/atom+xml" title="DexWorld Atom Feed" href="https://dexworld.net/feed/atom/" />
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <script src="https://kit.fontawesome.com/1845f60f85.js" crossorigin="anonymous"></script>
+
+	<title>Blog - DexWorld.net</title>
+
+	<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}">
+    <!--link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_home.css')}}"-->
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_universaltools.css')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_blog.css')}}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <style>
+        #myHeader2 {
+            background-image: url({{url_for('static',filename='/images/PXL_20230727_132733855.MP3.jpg')}});
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            /*height: 300px;  width: 1460px; */
+            padding: 5px;
+                    }
+    </style>
+	<link rel="canonical" href="https://dexworld.net/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Blog - DexWorld.net" />
+	<meta property="og:description" content="A personal website dedicated to the learning of science, art, and travel" />
+	<meta property="og:url" content="https://dexworld.net/blog" />
+	<meta property="og:site_name" content="dexworld.net" />
+	<meta property="article:modified_time" content="2022-01-07T20:10:45+00:00" />
+</head>
+
+<!-- Side Navigation -->	
+<nav class="w3-sidebar w3-bar-block w3-animate-left sidenav" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="w3_close()" style="font-size:16px">&times;</a>
+     <hr>
+     <button class="dropdown-btn">Data Science<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container" style="  background-color: #5c656e;">
+              <a href="#" class="w3-bar-item w3-button w3-left">Sub-Topic 1</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+        </div>
+        
+     <button class="dropdown-btn">Astronomy<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+              <a href="#" class="w3-bar-item w3-button w3-left">Galaxy Spheroids</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Cross-correlation</a>
+        </div>
+
+     <button class="dropdown-btn">Computer Science<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+              <a href="#" class="w3-bar-item w3-button w3-left">Graph</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+        </div>
+     <hr>
+     <button class="dropdown-btn">Art<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+              <a href="#" class="w3-bar-item w3-button w3-left">Cosmic Fever Dream</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+        </div>
+        
+     <button class="dropdown-btn">Travel<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+              <a href="#" class="w3-bar-item w3-button w3-left">Notes from around the world</a>
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+        </div>        
+              <a href="#" class="w3-bar-item w3-button w3-left">Others</a>
+     <hr>
+     <img src="{{url_for('static', filename='images/61987771(copy).png')}}" class="image" style="width:50%; float:top"> 
+</nav>
+
+<body>
+
+<div class="container">
+<!--------------------------- Header Banner Bar------------------------------->
+<header id="myHeader2" class="header">
+    <div></div><div></div>
+    <div id="social-icons"> 
+    <!--div class="w3-display-bottomleft w3-container w3-xxxlarge w3-text-white w3-padding-32 w3-hide-small"--class=" w3-container w3-text-white w3-hide-small w3-display-bottom-right"-->
+        <a href="https://github.com/dex-hon-sci" class="fa-brands fa-github" style="text-decoration: none"></a>
+        <a href="https://www.linkedin.com/in/dexter-suei-hei-h-81a358b1/" class="fa-brands fa-linkedin" style="text-decoration: none"></a>
+        <a href="https://orcid.org/0000-0003-3183-2371" class="fa-brands fa-orcid" style="text-decoration: none"></a>
+        <a href="https://instagram.com" class="fa-brands fa-instagram" style="text-decoration: none"></a>
+        <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-researchgate" style="text-decoration: none"></a>
+        <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-goodreads" style="text-decoration: none"></a>
+        <a href="https://scholar.google.com/citations?user=uSR5ircAAAAJ&hl=en&oi=sra" class="fa-brands fa-google" style="text-decoration: none"></a>
+    </div>    
+    <div></div> <div></div> <div></div>
+    <div class="Banner-title" style="padding-left: 8px;"> 
+        <h1> Dexter Hon's Home Page </h1>
+        <h1> | Science | Art | Travel | </h1>
+    </div>
+    <div></div>
+</header>
+
+<nav class="topnav navbar" id="topnav2">
+ <span class="fa fa-bars w3-xxlarge w3-left w3-theme w3-text-white" style="cursor:pointer" onclick="w3_open()"></span>
+  <a href="javascript:void(0)" style="text-align:left"><i class="fa fa-search w3-bar-item w3-padding-large"></i></a>
+  <a href="#home" class="dropdown w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="#Blog" class="dropdown w3-bar-item w3-button w3-padding-large" style="color:#f6a661">Blog/Articles</a>
+  <div class="dropdown w3-bar-item w3-button">
+  <button class="w3-button w3-padding-large" title="Projects" >Projects <a class="fa fa-caret-down"></a></button>     
+    <div class="dropdown-content">
+         <a href="#Publication" class="w3-bar-item w3-button" >Publications</a>
+         <a href="#Sci" class="w3-bar-item w3-button" style="display:none">Science</a>
+            <div class="dropdown-content">
+                  <a href="#DataSci" class="w3-bar-item w3-button">Data Science</a>
+            </div>
+    </div>
+  </div>
+  <div class="dropdown w3-bar-item w3-button">
+  <!--a href="#Books" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Books</a-->
+  <button class="w3-button w3-padding-large" id="Books">Books <a class="fa fa-caret-down"></a></button>     
+    <div class="dropdown-content w3-bar-block w3-card-4 w3-hide-small" id="Books-Content">
+         <a href="#BookRecommend" class="w3-bar-item w3-button">Recommendation</a>
+         <a href="#BookReviews" class="w3-bar-item w3-button">Reviews</a>
+    </div>
+  </div>
+  <a href="#Aboutme" class="dropdown w3-bar-item w3-button w3-padding-large">About</a>
+</nav> 
+
+
+<div class="margin-left">margin-left</div>
+
+<div class="block-left">block-left
+{% block content %}{% endblock %} 
+</div>
+
+<div class="block-right">block-right</div>
+<div class="margin-right">margin-right</div>
+
+<!----------------- Footer --------------------------------------------------->
+<div class="footer" style="font-size: 16px;">
+    <p>Contact Me <a class="fa fa-envelope" href="mailto:dex-hon-sci@outlook.com"
+    aria-hidden="true" style="color: white; font-size:20px text-decoration: none"></a> </p>
+    <ul class="copyright">
+    <p style="color: white;">&copy; 2023 copyright Dexter Hon // All rights reserved // Privacy Policy</p>
+    </ul>
+</div>
+
+</div>
+
+<!--JavaScript functions-->
+<script>
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "18%";
+  x.style.fontSize = "20px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+<!-- Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict -->
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+
+$('#iconified').on('keyup', function() {
+    var input = $(this);
+    if(input.val().length === 0) {
+        input.addClass('empty');
+    } else {
+        input.removeClass('empty');
+    }
+});
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+
+
+let timVine = document.getElementById("Content-large");
+let navbar = document.getElementById("topnav2");
+
+let navPos = navbar.getBoundingClientRect().top;
+
+window.addEventListener("scroll", e => {
+  let scrollPos = window.scrollY;
+  if (scrollPos > navPos) {
+    navbar.classList.add('sticky');
+    header.classList.add('navbarOffsetMargin');
+  } else {
+    navbar.classList.remove('sticky');
+    header.classList.remove('navbarOffsetMargin');
+  }
+});
+
+</script>
+
+</body>
+
+</html>
