@@ -3,6 +3,22 @@
   #mySidebar a {font-size: 18px;}
 }
 
+body {
+  background-color: #000000;
+  font-family: Times, "Times New Roman", Georgia, serif 
+  }
+
+h1 { font-family: Times, "Times New Roman", Georgia, serif; font-size: 24px; font-style: normal; 
+font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+
+h3 { font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, 
+Bitstream Vera Sans Bold, Arial Black, sans serif; font-size: 14px; font-style: normal; 
+font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+
+header h1 { font-family: Times, "Times New Roman", Georgia, serif; 
+font-size: 44px; font-style: normal; 
+font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+
 
 /*Side bar styles*/
 #mySidebar {
@@ -99,9 +115,11 @@
 }
 
 /* Style for the top navigation bar */
-#topnav2 {
+.topnav2 {
       grid-column-start: 1;
       grid-column-end: 8;
+      
+      height: 55px;
           
       background-color: #3f6081;
       color: white;
@@ -109,12 +127,17 @@
       font-family: Times, "Times New Roman", Georgia, serif;
       text-align: right;
       overflow: hidden;
-      
       position: relative;
 }
 
+.topnav2 .button {
+      background-color: #3f6081;
+      color: white;
+      font-size: 18px;
+      text-align: right;
+}
 
-#topnav2.sticky {
+.topnav2.sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -141,7 +164,7 @@
 }
 
 
-.dropdown-container, dropdown-container a {
+.dropdown-container {
   display: none;
   padding-left: 8px;
   
@@ -149,22 +172,30 @@
 
 .dropdown-container a {
     font-size: 16px;
-    background-color: #5c656e;
-
+    background-color: #424a52;
 }
 
 /*Auto display when hover*/
 .dropdown-content {
   display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.dropdown-content:hover {
+  display: block;
+
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 100;
 }
 
 .dropdown-content a {
-  float: none;
+  /*float: none;*/
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -173,11 +204,8 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
   display: block;
+  background-color: #ddd;
 }
 
 
