@@ -99,32 +99,31 @@
     <div></div>
 </header>
 
-<nav class="topnav navbar" id="topnav2">
- <span class="fa fa-bars w3-xxlarge w3-left w3-theme w3-text-white" style="cursor:pointer" onclick="w3_open()"></span>
-  <a href="javascript:void(0)" style="text-align:left"><i class="fa fa-search w3-bar-item w3-padding-large"></i></a>
-  <a href="#home" class="dropdown w3-bar-item w3-button w3-padding-large">Home</a>
-  <a href="#Blog" class="dropdown w3-bar-item w3-button w3-padding-large" style="color:#f6a661">Blog/Articles</a>
-  <div class="dropdown w3-bar-item w3-button">
-  <button class="w3-button w3-padding-large" title="Projects" >Projects <a class="fa fa-caret-down"></a></button>     
-    <div class="dropdown-content">
-         <a href="#Publication" class="w3-bar-item w3-button" >Publications</a>
-         <a href="#Sci" class="w3-bar-item w3-button" style="display:none">Science</a>
-            <div class="dropdown-content">
-                  <a href="#DataSci" class="w3-bar-item w3-button">Data Science</a>
-            </div>
-    </div>
-  </div>
-  <div class="dropdown w3-bar-item w3-button">
-  <!--a href="#Books" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Books</a-->
-  <button class="w3-button w3-padding-large" id="Books">Books <a class="fa fa-caret-down"></a></button>     
-    <div class="dropdown-content w3-bar-block w3-card-4 w3-hide-small" id="Books-Content">
-         <a href="#BookRecommend" class="w3-bar-item w3-button">Recommendation</a>
-         <a href="#BookReviews" class="w3-bar-item w3-button">Reviews</a>
-    </div>
-  </div>
-  <a href="#Aboutme" class="dropdown w3-bar-item w3-button w3-padding-large">About</a>
-</nav> 
+<div class="topnav2">
+  <span class="fa fa-bars" style="cursor:pointer; float:left; font-size:25px" onclick="w3_open()"></span>
+  <span class="w3-button w3-padding-large" href="javascript:void(0)" style="float:left;"><i class="fa fa-search"></i></span>
+  
+  <div class="topnav-items"> 
+  <a href="/" style="color:#f6a661">Home</a>
+  <a href="/blog1">Blog/Articles</a>
 
+  <div class="dropdown">
+    <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>     
+      <div class="dropdown-content">
+         <a href="#Publication"> Publications</a>
+         <a href="#Sci"> Science</a>
+      </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" id="Books"> Books <i class="fa fa-caret-down"></i></button>     
+      <div class="dropdown-content" id="Books-Content">
+         <a href="#BookRecommend" >Recommendation</a>
+         <a href="#BookReviews">Reviews</a>
+      </div>
+  </div>
+  <a href="#Aboutme">About</a>
+  </div>
+</div> 
 
 <div class="margin-left">margin-left</div>
 
