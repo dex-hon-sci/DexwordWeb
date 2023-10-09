@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js" >
+<!-- start -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1," />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="alternate" type="application/atom+xml" title="DexWorld Atom Feed" href="https://dexworld.net/feed/atom/" />
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <script src="https://kit.fontawesome.com/1845f60f85.js" crossorigin="anonymous"></script>
+
+	<title>Blog - DexWorld.net</title>
+	<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_universaltools.css')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_blog.css')}}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <style>
+        #myHeader2 {
+            background-image: url({{url_for('static',filename='/images/PXL_20230727_132733855.MP3.jpg')}});
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            /*height: 300px;  width: 1460px; */
+            padding: 5px;
+                    }
+    </style>
+	<link rel="canonical" href="https://dexworld.net/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Blog Index - DexWorld.net" />
+	<meta property="og:description" content="A personal website dedicated to the learning of science, art, and travel" />
+	<meta property="og:url" content="https://dexworld.net/blog" />
+	<meta property="og:site_name" content="dexworld.net" />
+	<meta property="article:modified_time" content="2022-01-07T20:10:45+00:00" />
+</head>
+
+<!-- Side Navigation -->	
+{% block content %}{% endblock %} 
+
+
+<body>
+
+<div class="container">
+<!--------------------------- Header Banner Bar------------------------------->
+<header id="myHeader2" class="header">
+    <div></div><div></div>
+    <div id="social-icons"> 
+    <!--div class="w3-display-bottomleft w3-container w3-xxxlarge w3-text-white w3-padding-32 w3-hide-small"--class=" w3-container w3-text-white w3-hide-small w3-display-bottom-right"-->
+        <a href="https://github.com/dex-hon-sci" class="fa-brands fa-github" style="text-decoration: none"></a>
+        <a href="https://www.linkedin.com/in/dexter-suei-hei-h-81a358b1/" class="fa-brands fa-linkedin" style="text-decoration: none"></a>
+        <a href="https://orcid.org/0000-0003-3183-2371" class="fa-brands fa-orcid" style="text-decoration: none"></a>
+        <a href="https://instagram.com" class="fa-brands fa-instagram" style="text-decoration: none"></a>
+        <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-researchgate" style="text-decoration: none"></a>
+        <a href="https://www.researchgate.net/profile/Dexter-S-H-Hon" class="fa-brands fa-goodreads" style="text-decoration: none"></a>
+        <a href="https://scholar.google.com/citations?user=uSR5ircAAAAJ&hl=en&oi=sra" class="fa-brands fa-google" style="text-decoration: none"></a>
+    </div>    
+    <div></div> <div></div> <div></div>
+    <div class="Banner-title" style="padding-left: 8px;"> 
+        <h1> Dexter Hon's Home Page </h1>
+        <h1> | Science | Art | Travel | </h1>
+    </div>
+    <div></div>
+</header>
+
+<div class="topnav2">
+  <span class="fa fa-bars" style="cursor:pointer; float:left; font-size:25px" onclick="w3_open()"></span>
+  <span class="w3-button w3-padding-large" href="javascript:void(0)" style="float:left;"><i class="fa fa-search"></i></span>
+  
+  <div class="topnav-items"> 
+  <a href="/" style="color:#f6a661">Home</a>
+  <a href="/blog1">Blog/Articles</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>     
+      <div class="dropdown-content">
+         <a href="#Publication"> Publications</a>
+         <a href="#Sci"> Science</a>
+      </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" id="Books"> Books <i class="fa fa-caret-down"></i></button>     
+      <div class="dropdown-content" id="Books-Content">
+         <a href="#BookRecommend" >Recommendation</a>
+         <a href="#BookReviews">Reviews</a>
+      </div>
+  </div>
+  <a href="/#Aboutme">About</a>
+  </div>
+</div> 
+
+</body>

@@ -5,21 +5,17 @@ body {
 
 .container {
     width: 100vw;
-    height: 100vh;
     
     box-sizing: border-box;
-    /*border: 1px solid red;*/
     
     font-family: Times, "Times New Roman", Georgia, serif;  
 
     display: grid;
     color:red;
 
-    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-columns: 200px 600px 1fr 200px;
     grid-template-rows: 300px 55px 1fr 1fr 1fr 100px;
     
-    gap: 0px;
-    padding: 5px;
    /* box-sizing: border-box;*/
     overflow:scroll;
     /*flex-direction: row
@@ -41,7 +37,7 @@ body {
       grid-row-end: span 3;
     
       color:white;
-      border: 1px solid red;
+      /*border: 1px solid red;*/
 }
 
 .blog-block {}
@@ -51,12 +47,25 @@ body {
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: span 3;
-            
-      background-color:#202f37;
-      color:white
-      
-      border: 1px solid red;
+    
+      /*border: 1px solid red;*/
+ 
+      background-color:#202f37;  
 }
+
+.block-left h1, .block-right h1 {      
+      color:white;
+      padding: 50px 50px 20px 75px;
+      text-align: center;
+      font-family: Times, "Times New Roman", Georgia, serif;
+      }
+
+
+.block-left p, .block-right p {      
+      color:white;
+      padding: 50px 50px 20px 75px;
+      font-size: 18px;
+      }
 
 .block-right {
       grid-column-start: 3;
@@ -65,9 +74,9 @@ body {
       grid-row-end: span 3;
 
       background-color:#202f37;
-      color:white
+      color:white;
       
-      border: 1px solid red;
+      /*border: 1px solid red;*/
 
 }
 
@@ -78,7 +87,7 @@ body {
       grid-row-end: span 3;
       
       color:white;
-      border: 1px solid red;
+      /*border: 1px solid red;*/
 }
 
 .footer {

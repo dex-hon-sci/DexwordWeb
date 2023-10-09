@@ -10,6 +10,7 @@
 
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <script src="https://kit.fontawesome.com/1845f60f85.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='style/mydfunctions_home.js')}}"></script>
 
 	<title>Blog - DexWorld.net</title>
 	<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}">
@@ -125,14 +126,8 @@
   </div>
 </div> 
 
-<div class="margin-left">margin-left</div>
+{% block content %}{% endblock %}
 
-<div class="block-left">block-left
-{% block content %}{% endblock %} 
-</div>
-
-<div class="block-right">block-right</div>
-<div class="margin-right">margin-right</div>
 
 <!----------------- Footer --------------------------------------------------->
 <div class="footer" style="font-size: 16px;">
@@ -146,19 +141,9 @@
 </div>
 
 <!--JavaScript functions-->
+
+
 <script>
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "18%";
-  x.style.fontSize = "20px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-
 <!-- Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict -->
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
