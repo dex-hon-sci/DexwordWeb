@@ -2,5 +2,192 @@
 {% block title %} Home Page{% endblock %} 
 
 {% block content %} 
+<!----------------- Introduction to the website------------------------------->
+<title>Home - DexWorld.net</title>
 
-{% end content %} 
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_home_1.css')}}">
+<style> 
+        .Content-large {
+            background-image: url({{url_for('static',filename='/images/prateek-katyal-_YzGQvASeMk-unsplash.jpg')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;        
+        }            
+                    
+        .Content-small1 {
+            background-image: url({{url_for('static',filename='/images/spiral_gal.png')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 580px
+            font-family: Times, "Times New Roman", Georgia, serif;
+            
+            }
+            
+        .Content-small2 {
+            background-image: url({{url_for('static',filename='/images/Lore3-Recovered-Recovered-Recovered4_AI_Expanded.png')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:580px}
+            
+        .Content-small3 {
+            background-image: url({{url_for('static',filename='/images/code_example.png')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:580px}                    
+
+        .slider #slide-1 {
+            background-image: url({{url_for('static',filename='/images/gal_showcase.png')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white
+        }
+        
+        .slider #slide-2 {
+            background-image: url({{url_for('static',filename='/images/jaredd-craig-HH4WBGNyltc-unsplash.jpg')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white
+        }
+        
+        .slider #slide-3 {
+            background-image: url({{url_for('static',filename='/images/world-at-night.jpg')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white
+        }
+        
+        .slider #slide-4 {
+            background-image: url({{url_for('static',filename='/images/AlienEU1-Recovered8_AI_Expanded.jpg')}});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white
+        }      
+
+</style>
+
+
+<div class="container">
+
+<div class="Content-large">
+ <div class="Content-large-txt-box" style="padding-right: 50px">
+ <p> Thesis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+ in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+ sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
+ id est laborum. </p>
+</div>
+</div>
+<!----------------- Topic block No. 1----------------------------------------->
+
+<div class="Content-small-grid">
+    <div class="Content-small1">
+    <div class="banner-cell1">
+    <a style="font-size: 40px;">Science</a>
+    <p style="font-size: 18px"> 
+            |<a href="#DataScience"> Data Science </a>
+            |<a> Astronomy </a>
+            |<a> Computer Science </a>|
+    </p>
+    <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
+    </div>
+    </div>
+
+<!----------------- Topic block No. 2----------------------------------------->
+
+    <div class="Content-small2">
+    <div class="banner-cell2">
+    <a style="font-size: 40px;">Art</a>
+    <p style="font-size: 18px">
+        <a href="https://www.deviantart.com/xedrandon"> Illustration Portfolio </a>
+    </p>
+    <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
+    </div>
+    </div>
+
+<!----------------- Topic block No. 3----------------------------------------->
+    <div class="Content-small3">
+    <div class="banner-cell3">
+    <a style="font-size: 40px;">Projects</a>
+    <p style="font-size: 18px"> 
+         <a>  MNIST practise </a> 
+    </p>
+    <i class="fa-solid fa-caret-down w3-xxlarge" style="vertical-align:bottom"></i>
+    </div>
+    </div>
+</div>
+
+<!----------------- Features Slides------------------------------------------->
+
+<div class="features" style="width:100%; height:400px">  
+  <div class="slider">
+     <div class="slider-buttons">
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+      <a href="#slide-4">4</a>
+    </div>
+    <div class="slides">
+      <div class="slide" id="slide-1">
+        <p>Galaxy Spheroids: 
+        <a>My Astrophysics research on the compact massive quiescent spheroids hidden 
+        in galaxies in the local Universe. The properties of galaxy substrctures reveal
+         how galaxy evolve structurally across cosmic time. </a>
+        </p>
+      </div>
+      <div class="slide" id="slide-2">
+        <p>This is the second slide. Alternatively, change slides using the buttons at the top.</p>
+      </div>
+      <div class="slide" id="slide-3">
+        <p>This is the third slide. You're getting the hang of it.</p>
+      </div>
+      <div class="slide" id="slide-4">
+        <p>This is the last slide. Scroll back to the left if you're into that stuff.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------------- About Me Section------------------------------->
+
+<div class="Aboutme" id="Aboutme" >
+  <div class="Aboutme_photo"> <img src="{{url_for('static', filename='images/DexterP1680159copy.jpg')}}" class="image"
+   style="width:100%" style="grid-column-start: 2; grid-column-end: 3;"> </div>
+   <div class="Aboutme_Desc">
+   <span style="color:white">
+        <p style="font-size: 30px; color:#f6a661">About Me</p>
+        <p> I am passionate about using data to solve complex problems.
+    My academic pursuit in Astrophysics provided me with valuable skill sets that are immediately useful in data science.
+    I am particularly proficient in Statistical Analysis, image processing, and scientific writing.
+    Most importantly, I can learn new skills quickly and work in a team setting in any collaborative effort.
+    Furthermore, being an expatriate my whole life (I am born Malaysian and raised in Hong Kong) has fostered important interpersonal skills for me.
+    Having worked in three countries (China, Finland, and Australia) since 2012, I have learnt the value of communication and intercultural collaboration.
+    I am eager to apply my scientific skills to tackle real-life problems and deliver data-driven solutions to empower decision-making in the tech industry. 
+        </p>
+    <a style="float:right; color:#f6a661">External Links <i class="fa-solid fa-arrow-right"></i></a>
+    </span></div>
+    <div class="Aboutme_buttons"> 
+          <a class="w3-padding-large w3-center" id="AM_button1"
+          href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Hon%2C%20Dexter%20S.%20-H.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" style="text-decoration: none"> 
+          Publications <i class="fa fa-caret-right" style="font-size: 18px;"> </i> 
+          </a>
+        <div class="w3-padding-large w3-center" id="AM_button2"> 
+            <a> What </a><a class="fa fa-caret-right" style="font-size:16px"></a> 
+        </div>
+        <div class="w3-padding-large w3-center" id="AM_button3">  
+            <a>Detailed CV</a> <a class="fa fa-caret-right" style="font-size:16px"></a> 
+        </div>
+    </div>
+</div>
+
+</div>
+
+{% endblock %} 

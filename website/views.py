@@ -12,16 +12,16 @@ views = Blueprint("views", __name__)
 
 @views.route("/")
 def base():
-    return render_template('base.html')
+    return render_template('home.html')
 
-@views.route("/home")
+@views.route("/home", methods=['GET'])
 def home():
     return render_template('index2.html')
 
 
 @views.route("/blog")
 def blog():
-    return render_template('blog2.html')
+    return render_template('blog3.html')
 
 
 @views.route("/blog1")

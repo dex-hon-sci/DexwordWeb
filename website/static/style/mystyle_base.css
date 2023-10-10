@@ -1,0 +1,28 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    
+    font-family: Times, "Times New Roman", Georgia, serif !important;  
+
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 300px 55px 1fr 100px;
+    color: white;
+    gap: 0px;
+    padding: 5px;
+   /* box-sizing: border-box;*/
+    overflow:scroll;
+    /*flex-direction: row
+    justify-content: space;
+    align-items: baseline;
+    flex-wrap: nowrap;*/   
+}
+
+.container div {
+    padding:0px;
+    /*border: 1px solid #000000;*/
+}

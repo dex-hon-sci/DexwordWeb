@@ -122,7 +122,7 @@ font-variant: normal; font-weight: 700; line-height: 26.4px; }
       grid-column-start: 1;
       grid-column-end: 8;
       
-      /*height: 55px;*/
+      height: 55px;
       background-color: #3f6081;
 
       overflow: visible;
@@ -202,10 +202,9 @@ font-variant: normal; font-weight: 700; line-height: 26.4px; }
 
 /*Auto display when hover*/
 .dropdown-content {
-  display: block;
+  display: none;
   background-color: inherit;
 }
-
 
 .dropdown-content a {
   float: none;
@@ -224,10 +223,9 @@ font-variant: normal; font-weight: 700; line-height: 26.4px; }
 
 }
 
-/*.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
    display: block;
-}*/
-
+}
 
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
