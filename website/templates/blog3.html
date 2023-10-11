@@ -1,17 +1,18 @@
 {% extends "base.html" %}
-{% block title %} Home Page{% endblock %} 
-
+{% block title %} Blog Page{% endblock %} 
 {% block content %} 
+
 <title>Blog - DexWorld.net</title>
 
-<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_blog.css')}}">
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/mystyle_blog_.css')}}">
 
 <div class="container">
 
 <div class="margin-left">margin-left</div>
 
 <div class="block-left">block-left
-{% block content %}{% endblock %} 
+{% block blog_post %} {% endblock %} 
+
 </div>
 
 <div class="block-right">block-right</div>
@@ -21,7 +22,6 @@
 </div>
 
 
-</script>
 
 
 {% endblock %} 

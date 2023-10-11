@@ -1,0 +1,130 @@
+body {
+  background-color: #000000;
+  font-family: Times, "Times New Roman", Georgia, serif 
+  }
+
+.container {
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    
+    font-family: Times, "Times New Roman", Georgia, serif 
+
+    display: grid;
+    color:white;
+
+    grid-template-columns: 100px 1000px 1fr 100px;
+    grid-template-rows: 1fr 1fr 1fr 
+   
+    padding: 50px 50px 20px 75px;
+
+   /* box-sizing: border-box;*/
+    overflow:scroll;
+    /*flex-direction: row
+    justify-content: space;
+    align-items: baseline;
+    flex-wrap: nowrap;*/   
+}
+
+
+.post-box {background-color: #47494b;
+           opacity: 0.6;
+            border: 5px solid white; 
+            color:white;
+          border-radius: 25px;
+          padding: 50px 50px 20px 75px;
+          margin-bottom:8px;
+          margin-left:50px;
+          font-family:inherit;
+}
+.post-box h1, post-box h3 { 
+          text-align:left;
+          padding: 50px 50px 50px 75px;
+         font-family:inherit;
+}
+
+.post-box a {
+    text-align: right;
+    margin: 10px;
+} 
+
+.post-box:hover  {
+      background-color: #b8d6f5;
+      color:black;
+      padding: 12px;} 
+
+.margin-left{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: span 3;
+    
+      color:white;}
+
+.block-left {      
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: span 3;
+    
+      /*border: 1px solid red;*/
+      background-color:#202f37;  
+}
+
+.block-left h1, .block-right h1 {      
+      padding: 50px 50px 20px 30px;
+      font-family: Times, "Times New Roman", Georgia, serif;
+      }
+      
+.block-left h3 {
+    font-family: inherit;
+    padding-left: 10px;
+}
+
+.block-right {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: span 3;
+
+      background-color:#202f37;
+      color:white;
+      
+      /*border: 1px solid red;*/
+}
+
+.margin-right {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: span 3;
+      
+      color:white;
+      /*border: 1px solid red;*/
+}
+
+.slider-buttons {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: right;
+  z-index: 2;
+  border: 1x solid white; 
+
+}
+
+.slider-buttons a {
+  width: 2em;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.slider-buttons a:active {
+  color: white;
+}

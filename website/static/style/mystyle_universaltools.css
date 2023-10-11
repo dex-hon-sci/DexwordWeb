@@ -126,7 +126,7 @@ font-variant: normal; font-weight: 700; line-height: 26.4px; }
       background-color: #3f6081;
 
       overflow: visible;
-      position: sticky;
+      position: relative;
 }
 
 
@@ -149,11 +149,11 @@ font-variant: normal; font-weight: 700; line-height: 26.4px; }
   float: right;
 }
 
-/*.topnav2.sticky {
-  position: sticky;
+.sticky {
+  position: fixed;
   top: 0;
   width: 100%;
-}*/
+}
 
 .topnav2 a:hover, .dropdown:hover, .topnav2 span:hover {
   background-color: #8a9097;

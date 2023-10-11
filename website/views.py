@@ -24,6 +24,10 @@ def blog():
     return render_template('blog3.html')
 
 
+@views.route("/blog_index")
+def blog_index():
+    return render_template('blog_index.html')
+
 @views.route("/blog1")
 def blog1():
     return render_template('blog_content1.html')

@@ -5,7 +5,7 @@ body {
 
 .container {
     width: 100vw;
-    
+    height: 100%;
     box-sizing: border-box;
     
     font-family: Times, "Times New Roman", Georgia, serif;  
@@ -33,7 +33,7 @@ body {
 .margin-left{
       grid-column-start: 1;
       grid-column-end: 2;
-      grid-row-start: 3;
+      grid-row-start: 1;
       grid-row-end: span 3;
     
       color:white;
@@ -45,7 +45,7 @@ body {
 .block-left {      
       grid-column-start: 2;
       grid-column-end: 3;
-      grid-row-start: 3;
+      grid-row-start: 1;
       grid-row-end: span 3;
     
       /*border: 1px solid red;*/
@@ -70,7 +70,7 @@ body {
 .block-right {
       grid-column-start: 3;
       grid-column-end: 4;
-      grid-row-start: 3;
+      grid-row-start: 1;
       grid-row-end: span 3;
 
       background-color:#202f37;
@@ -83,24 +83,10 @@ body {
 .margin-right {
       grid-column-start: 4;
       grid-column-end: 5;
-      grid-row-start: 3;
+      grid-row-start: 1;
       grid-row-end: span 3;
       
       color:white;
       /*border: 1px solid red;*/
 }
 
-.footer {
-     background-color: black; 
-     grid-column-start: 1;
-     grid-column-end: 6;
-     
-     grid-row-start: 10;
-     grid-row-end:span 1 ;
-            
-     box-sizing: border-box;
-     border: 1px solid #000000;
-     
-     text-align: center;
-     }
-       

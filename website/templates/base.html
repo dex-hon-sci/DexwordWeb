@@ -99,7 +99,7 @@
     <div></div>
 </header>
 
-<div class="topnav2">
+<div class="topnav2" id="topnav2">
   <span class="fa fa-bars" style="cursor:pointer; float:left; font-size:25px" onclick="w3_open()"></span>
   <span class="w3-button w3-padding-large" href="javascript:void(0)" style="float:left;"><i class="fa fa-search"></i></span>
   
@@ -195,24 +195,6 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 
-
-
-
-let timVine = document.getElementById("Content-large");
-let navbar = document.getElementById("topnav2");
-
-let navPos = navbar.getBoundingClientRect().top;
-
-window.addEventListener("scroll", e => {
-  let scrollPos = window.scrollY;
-  if (scrollPos > navPos) {
-    navbar.classList.add('sticky');
-    header.classList.add('navbarOffsetMargin');
-  } else {
-    navbar.classList.remove('sticky');
-    header.classList.remove('navbarOffsetMargin');
-  }
-});
 
 </script>
 
