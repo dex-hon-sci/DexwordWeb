@@ -131,7 +131,7 @@
 <!----------------- Footer --------------------------------------------------->
 <div class="footer" style="font-size: 16px;">
     <p>Contact Me <a class="fa fa-envelope" href="mailto:dex-hon-sci@outlook.com"
-    aria-hidden="true" style="color: white; font-size:20px text-decoration: none"></a> </p>
+    aria-hidden="true" style="color: white; font-size:20px; text-decoration: none"></a> </p>
     <ul class="copyright">
     <p style="color: white;">&copy; 2023 copyright Dexter Hon // All rights reserved // Privacy Policy</p>
     </ul>
@@ -139,10 +139,18 @@
 
 </div>
 
-<!--JavaScript functions-->
-
-
 <script>
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "18%";
+  x.style.fontSize = "20px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
 <!-- Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict -->
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
