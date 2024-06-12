@@ -13,7 +13,7 @@ body {
     display: grid;
     color:red;
 
-    grid-template-columns: 200px 600px 1fr 200px;
+    grid-template-columns: 200px 800px 1fr 200px;
     grid-template-rows: 1fr 1fr 1fr 
     
    /* box-sizing: border-box;*/

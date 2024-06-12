@@ -63,7 +63,7 @@
        font-size:16px;
        }
        
-.Content-small-grid a:hover {color: #f6a661;} 
+.Content-small-grid a:hover {color: #FFB0CC;} /*#f6a661*/
 
 .Content-small1 {
        grid-column-start: 1;
